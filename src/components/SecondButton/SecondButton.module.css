@@ -1,0 +1,22 @@
+.btn {
+	background-color: transparent;
+	border: 1px solid #878787;
+	border-radius: 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	font-weight: 600;
+	padding: 10px 15px;
+	text-align: center;
+	transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+	box-shadow: 0px 3px 5px rgba(166, 175, 195, 0.25);
+}
+
+.btn:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+}

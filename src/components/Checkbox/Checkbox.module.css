@@ -1,0 +1,58 @@
+.checkbox {
+	display: flex;
+	align-items: center;
+	position: relative;
+	gap: 10px;
+	transition: all 0.3s ease-in-out;
+	font-size: 12px;
+}
+
+.checkbox::before {
+	content: '';
+	display: block;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #000;
+}
+
+.checkbox::after {
+	content: '';
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 3px;
+	width: 10px;
+	height: 10px;
+	background-image: url('data:image/svg+xml,<%3Fxml version="1.0" encoding="utf-8"%3F><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path fill="%23ffffff" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z"/></svg>');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.input:checked + .checkbox::after {
+	display: block;
+}
+.input:checked + .checkbox::before {
+	background-color: #000;
+}
+
+.checkbox:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: -999999999999999px;
+}
+
+.input:focus + .checkbox::before {
+	outline: -webkit-focus-ring-color auto 1px;
+}

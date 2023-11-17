@@ -1,0 +1,28 @@
+.form {
+	margin-bottom: 55px;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 38px;
+	margin-bottom: 23px;
+}
+
+.details {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 38px;
+}
+
+.forgot-password {
+	color: #4d4d4d;
+	font-size: 12px;
+	font-weight: 300;
+	text-decoration: none;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.forgot-password:hover {
+	opacity: 0.6;
+}

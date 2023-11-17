@@ -1,0 +1,36 @@
+.label {
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	position: relative;
+}
+
+.inputContainer {
+	position: relative;
+}
+
+.input {
+	border-radius: 6px;
+	border: 0.6px solid #282828;
+	padding: 20px 50px 20px 27px;
+	width: 100%; /* Занимает 100% ширины контейнера */
+}
+
+.input::placeholder {
+	color: #ababab;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.input-validation-error {
+	border-color: #ff6666;
+	outline: 2px solid #ff6666;
+	color: #ff6666;
+}
+
+.validation-error-message {
+	position: absolute;
+	bottom: -25px;
+	color: #ff6666;
+}

@@ -1,0 +1,18 @@
+.auth-box {
+	border-radius: 10px;
+	border: 0.5px solid #878787;
+	box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
+	padding: 35px;
+	flex-basis: 505px;
+	flex-grow: 1;
+}
+
+.welcome {
+	font-size: 25px;
+	font-weight: 300;
+	margin-bottom: 30px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 19px;
+	}
+}

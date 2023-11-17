@@ -1,0 +1,18 @@
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.img-wrapper {
+	display: flex;
+	flex-shrink: 2;
+	align-items: center;
+
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+}
+
+.img {
+	width: 100%;
+}

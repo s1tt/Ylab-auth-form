@@ -1,0 +1,23 @@
+.header {
+	margin-bottom: 50px;
+	display: inline-block;
+}
+
+.logo {
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+	}
+}
+
+.link {
+	text-decoration: none;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.link:hover {
+	opacity: 0.6;
+}

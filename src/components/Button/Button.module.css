@@ -1,0 +1,20 @@
+.btn {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 17px 0;
+	border: none;
+	border-radius: 6px;
+	background: #000;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.btn:disabled {
+	opacity: 0.4;
+}
